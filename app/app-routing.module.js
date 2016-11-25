@@ -12,15 +12,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Created by zhengmz on 2016/11/15.
  */
 var router_1 = require("@angular/router");
-var dashboard_component_1 = require("./dashboard.component");
-var heros_component_1 = require("./heros.component");
-var hero_detail_component_1 = require("./hero-detail.component");
+var dashboard_component_1 = require("./hero/dashboard.component");
+var heros_component_1 = require("./hero/heros.component");
+var hero_detail_component_1 = require("./hero/hero-detail.component");
 var core_1 = require("@angular/core");
+var hero_form_component_1 = require("./form/hero-form.component");
 var routes = [
     { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
     { path: 'dashboard', component: dashboard_component_1.DashBoardComponent },
     { path: 'heroes', component: heros_component_1.HerosComponent },
-    { path: 'detail/:id', component: hero_detail_component_1.HeroDetailComponent }
+    { path: 'heroeform', component: hero_form_component_1.HeroFormComponent },
+    { path: 'detail/:id', component: hero_detail_component_1.HeroDetailComponent },
+    { path: 'contact', loadChildren: 'app/contact/contact.module#ContactModule' },
+    { path: 'crisis', loadChildren: 'app/crisis/crisis.module#CrisisModule' }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {

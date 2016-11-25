@@ -42,7 +42,7 @@ var HeroFormComponent = (function () {
             moduleId: module.id,
             selector: 'hero-form',
             templateUrl: 'hero-form.component.html',
-            styleUrls: ['forms.css']
+            styleUrls: ['hero-form.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], HeroFormComponent);
